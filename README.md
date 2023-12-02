@@ -30,3 +30,8 @@
 
 ## II.  Nach MVVM, im ui-Package, Fragmente erstellt
 ## III. build.gradle(:app)/new Ressource File/ navigation/ nav_graph.xml erstellen
+## IV.  Navigations-Host-Fragment für die Navigation-Komponente in der activity-main.xml definieren
+    -  FragmentContainerView einfügen:   
+        1. android:name="androidx.navigation.fragment.NavHostFragment" (FragmentContainerView ist ein NavHostFragment)
+        2. app:defaultNavHost="true (Legt dieses NavHostFragment als Standard-NavHost fest)
+        3. app:navGraph="@navigation/nav_graph (Verknüpft das NavHostFragment mit dem Navigationsgraph)
