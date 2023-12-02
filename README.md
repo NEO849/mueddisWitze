@@ -27,3 +27,6 @@
                                         classpath("androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version")
                                     }
                                 }
+
+## II.  Nach MVVM, im ui-Package, Fragmente erstellt
+## III. build.gradle(:app)/new Ressource File/ navigation/ nav_graph.xml erstellen
