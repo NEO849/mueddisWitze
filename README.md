@@ -1,6 +1,22 @@
 ### mueddi´s Witze
 
-## I. Navigation einrichten:
+## MVVM(Model-View-ViewModel) Aufbau
+├── api/                      # API-Kommunikation
+│   └── JokeApiService.kt
+├── model/                    # Datenmodelle
+│   └── Joke.kt
+├── repository/               # Datenabfrage und -verwaltung
+│   └── JokeRepository.kt
+├── ui/                       # UI-Komponenten
+│   ├── view/
+│   │   ├── MainActivity.kt
+│   │   ├── HomeFragment.kt
+│   │   └── JokeFragment.kt
+│   └── viewmodel/
+│       └── JokeViewModel.kt
+└── utils/                    # Hilfsklassen und -funktionen
+
+## I. Navigation einrichten
     - build.gradle(:app)
         +     plugins:          id("androidx.navigation.safeargs.kotlin")
         +     dependencies:     val nav_version = "2.7.5"
@@ -35,3 +51,4 @@
         1. android:name="androidx.navigation.fragment.NavHostFragment" (FragmentContainerView ist ein NavHostFragment)
         2. app:defaultNavHost="true (Legt dieses NavHostFragment als Standard-NavHost fest)
         3. app:navGraph="@navigation/nav_graph (Verknüpft das NavHostFragment mit dem Navigationsgraph)
+
