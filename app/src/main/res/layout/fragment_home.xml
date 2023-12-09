@@ -12,13 +12,24 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btnWitze"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
             android:text="@string/witze"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnNorris"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="@string/chuck_norris"
+            app:layout_constraintEnd_toEndOf="@+id/btnWitze"
+            app:layout_constraintStart_toStartOf="@+id/btnWitze"
+            app:layout_constraintTop_toBottomOf="@+id/btnWitze" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
