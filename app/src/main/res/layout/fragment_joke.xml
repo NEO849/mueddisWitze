@@ -11,7 +11,7 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/tvWitzeInDeutsch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="120dp"
@@ -21,35 +21,35 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/tvSet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="148dp"
             android:text="@string/set"
-            app:layout_constraintEnd_toEndOf="@+id/textView3"
-            app:layout_constraintStart_toStartOf="@+id/textView3"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+            app:layout_constraintEnd_toEndOf="@+id/tvWitzeInDeutsch"
+            app:layout_constraintStart_toStartOf="@+id/tvWitzeInDeutsch"
+            app:layout_constraintTop_toBottomOf="@+id/tvWitzeInDeutsch" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/tvDel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
             android:text="@string/del"
-            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="@+id/tvSet"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintStart_toStartOf="@+id/tvSet"
+            app:layout_constraintTop_toBottomOf="@+id/tvSet" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnNextJoke"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="168dp"
+            android:layout_marginTop="126dp"
             android:text="@string/next"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintEnd_toEndOf="@+id/tvDel"
+            app:layout_constraintStart_toStartOf="@+id/tvDel"
+            app:layout_constraintTop_toBottomOf="@+id/tvDel" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
