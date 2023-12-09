@@ -17,8 +17,14 @@ class JokeFragment : Fragment(R.layout.fragment_joke) {
         super.onViewCreated(view, savedInstanceState)
 
         viewModel.jokeResponse.observe(viewLifecycleOwner) { jokeResponse ->
-            // Setzt den Witz in die TextView
-            view.findViewById<TextView>(R.id.tvSet).text = jokeResponse.joke
+            // Überprüfen, ob der Witz zweiteilig ist
+            if (jokeResponse.type == "twopart") {
+                view.findViewById<TextView>(R.id.tvSet).text = jokeResponse.setup
+                view.findViewById<TextView>(R.id.tvDel).text = jokeResponse.delivery
+            } else {
+                view.findViewById<TextView>(R.id.tvSet).text = jokeResponse.setup
+                view.findViewById<TextView>(R.id.tvDel).text = ""
+            }
         }
 
         // Witz abrufen, wenn das Fragment erstellt wird
